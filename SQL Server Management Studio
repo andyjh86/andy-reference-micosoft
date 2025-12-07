@@ -1,0 +1,121 @@
+# SQL Server Management Studio (SSMS) 22 Installation Checklist
+
+This checklist documents exactly what to select during installation of SSMS 22 when installing it for use with a local SQL Server Developer Edition instance.
+
+---
+
+## 1. Launch the SSMS Installer
+
+1. Run the SSMS setup executable you downloaded from Microsoft.
+2. Wait for the installer to load the component selection screen.
+
+---
+
+## 2. Core Components
+
+On the right-hand side, confirm the following is selected:
+
+- SSMS Core Components
+
+This is the only component required for:
+- Connecting to SQL Server
+- Running queries
+- Exploring databases and objects
+- Managing SQL Server configurations
+- Performing admin tasks
+
+No other selections are required for normal SQL Server work.
+
+---
+
+## 3. Optional Workloads (Do Not Select Unless Needed)
+
+The installer shows four optional workloads on the left:
+
+1. AI Assistance  
+2. Business Intelligence  
+3. Hybrid and Migration  
+4. Code Tools  
+
+For a standard SQL Server learning and development environment:
+
+- Leave all four unchecked.
+
+Notes:
+
+- Business Intelligence does not install SQL Server Data Tools (SSDT).  
+- AI Assistance is optional and not required for database work.  
+- Hybrid and Migration tools are only used for enterprise migrations to Azure or newer SQL versions.  
+- Code Tools are optional enhancements, not required for everyday SQL work.
+
+---
+
+## 4. Installation Location
+
+Leave the default location: C:\Program Files\Microsoft SQL Server Management Studio 22\
+
+
+Unless you have a specific reason to install elsewhere.
+
+---
+
+## 5. Installation Mode
+
+At the bottom-right of the installer:
+
+- Choose "Install while downloading" (default and recommended).
+- Click Install.
+
+Total space required is typically around 2.2 GB.
+
+---
+
+## 6. After Installation
+
+When SSMS completes installation:
+
+1. Launch SQL Server Management Studio.
+2. Connect to your SQL Server instance.
+
+### Test Windows Authentication:
+
+- Server type: Database Engine  
+- Server name: `localhost`  
+- Authentication: Windows Authentication  
+- Click Connect  
+
+### Test SQL Authentication:
+
+- Disconnect and reconnect using:  
+  - Server name: `localhost`  
+  - Login: `sa`  
+  - Password: (the one created during SQL Server installation)  
+
+This confirms Mixed Mode authentication is working.
+
+---
+
+## 7. Optional Follow-up Installs
+
+If you later need advanced BI or data integration capabilities:
+
+- Install SQL Server Data Tools (SSDT) via Visual Studio Installer for:  
+  - SSIS development  
+  - SSAS Tabular/Multidimensional models  
+  - SSRS report creation  
+
+These are not part of SSMS.
+
+---
+
+## Summary
+
+Minimum required for a fully functional SQL Server GUI:
+
+- SSMS Core Components only  
+- No optional workloads selected  
+- Defaults accepted  
+- Installation complete  
+
+This results in a clean, lightweight SSMS installation suitable for development, training, and database administration.
+
