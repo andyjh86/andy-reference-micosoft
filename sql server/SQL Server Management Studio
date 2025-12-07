@@ -108,6 +108,27 @@ These are not part of SSMS.
 
 ---
 
+## 8. About the Sign-In Prompt (Important)
+
+When SSMS launches for the first time, it may show a screen prompting you to:
+
+- Sign in with Microsoft  
+- Sign in with GitHub  
+- Create an account  
+
+This screen is optional and **not required** to use SQL Server locally.
+
+If you are only working with your local SQL Server installation:
+
+- Select **Skip and add accounts later**.
+
+Notes:
+
+- Not signing in does not limit your ability to use SSMS.  
+- The sign-in is only needed for Azure integrations or syncing UI settings across devices.  
+
+---
+
 ## Summary
 
 Minimum required for a fully functional SQL Server GUI:
@@ -115,7 +136,7 @@ Minimum required for a fully functional SQL Server GUI:
 - SSMS Core Components only  
 - No optional workloads selected  
 - Defaults accepted  
-- Installation complete  
+- Skip the sign-in prompt  
+- Connect using Windows or SQL authentication  
 
 This results in a clean, lightweight SSMS installation suitable for development, training, and database administration.
-
