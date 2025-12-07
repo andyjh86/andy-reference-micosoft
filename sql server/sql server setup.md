@@ -197,3 +197,7 @@ Then click Install.
 - SQL Server Agent was set to Automatic to allow scheduled jobs.
 - All services using NT SERVICE virtual accounts is the recommended approach.
 - Defaults for memory and TempDB are fine for a development workstation.
+
+
+## once this is done download Install SQL Server Management Studio
+## https://learn.microsoft.com/en-us/ssms/install/install
