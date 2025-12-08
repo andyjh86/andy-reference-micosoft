@@ -14,7 +14,8 @@ This guide shows how to configure a Hyper-V virtual machine (VM) to support:
 Nested virtualisation allows the VM to run Hyper-V or other hypervisors.
 
 ### Command
-powershell
+In powershell:
+
 Set-VMProcessor -VMName "vm-example" -ExposeVirtualizationExtensions $true
 
 ### To Verify
@@ -30,7 +31,8 @@ vmname                 True
 
 
 ### Command
-powershell
+In powershell:
+
 Set-VMNetworkAdapter -VMName "vm-example" -MacAddressSpoofing On
 
 ### To Verify
