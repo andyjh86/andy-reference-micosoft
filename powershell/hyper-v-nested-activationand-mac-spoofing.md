@@ -9,14 +9,12 @@ This guide shows how to configure a Hyper-V virtual machine (VM) to support:
 
 ---
 
-```
-
 ## 1. Enable Nested Virtualisation
 
 Nested virtualisation allows the VM to run Hyper-V or other hypervisors.
 
 ### Command
-```powershell
+powershell
 Set-VMProcessor -VMName "vm-example" -ExposeVirtualizationExtensions $true
 
 ### To Verify
@@ -32,7 +30,7 @@ vmname                 True
 
 
 ### Command
-```powershell
+powershell
 Set-VMNetworkAdapter -VMName "vm-example" -MacAddressSpoofing On
 
 ### To Verify
@@ -43,7 +41,7 @@ Get-VMNetworkAdapter -VMName "vm-example" | Select-Object VMName, MacAddressSpoo
 
 VMName           MacAddressSpoofing
 ------           ------------------
-winsrv25-nest                 On
+vm-example                 On
 
 ## Why MAC Spoofing Is Needed
 
