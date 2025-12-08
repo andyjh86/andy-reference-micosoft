@@ -5,7 +5,7 @@ This guide shows how to configure a Hyper-V virtual machine (VM) to support:
 - **Nested virtualisation** — required to run Hyper-V inside the VM  
 - **MAC address spoofing** — required when nested VMs need network access
 
-The examples below use a VM named **`vm-example`**. Adjust the name as needed.
+### The examples below use a VM named **`vm-example`**. Adjust the name as needed.
 
 ---
 
