@@ -9,6 +9,8 @@ This guide shows how to configure a Hyper-V virtual machine (VM) to support:
 
 ---
 
+```
+
 ## 1. Enable Nested Virtualisation
 
 Nested virtualisation allows the VM to run Hyper-V or other hypervisors.
